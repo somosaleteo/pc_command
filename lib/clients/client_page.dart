@@ -3,9 +3,22 @@ import 'package:flutter/material.dart';
 import '../commands/order_ice_cream_command.dart';
 import '../invokers/waiter_invoker.dart';
 import '../models/ice_cream_model.dart';
-import '../receivers/ice_cream_receiver.dart';
+import '../receivers/ice_cream_shop_receiver.dart';
 import '../widgets/orders_widget.dart';
 
+/// [ClientPage] is a StatefulWidget that provides a UI for ordering ice creams.
+///
+/// It includes buttons for ordering vanilla and chocolate ice creams, and a button to undo the last order.
+/// The orders are displayed in a row using the `OrdersWidget`.
+///
+/// Example:
+/// ```dart
+/// void main() {
+///   runApp(MaterialApp(
+///     home: ClientPage(),
+///   ));
+/// }
+/// ```.
 class ClientPage extends StatefulWidget {
   const ClientPage({super.key});
 

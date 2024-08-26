@@ -1,5 +1,28 @@
 import '../entities.dart';
 
+/// [WaiterInvoker] is a concrete invoker class that handles the execution of commands
+/// and provides functionality to undo the last command executed.
+///
+/// It maintains a history of commands that have been executed.
+///
+/// Example:
+/// ```dart
+/// final WaiterInvoker waiterInvoker = WaiterInvoker();
+///
+/// final Command vanillaOrder = OrderIceCreamCommand(
+///   iceCreamModel: IceCreamModel('Vanilla', 'Large'),
+///   receiver: shopReceiver,
+/// );
+///
+/// waiterInvoker.takeOrder(vanillaOrder);
+/// print('--- Orders after taking order ---');
+/// shopReceiver.showOrders();
+///
+/// waiterInvoker.undoLastOrder();
+/// print('--- Orders after undo ---');
+/// shopReceiver.showOrders();
+/// ```.
+
 class WaiterInvoker implements Invoker {
   final List<Command> _commandHistory = <Command>[];
 

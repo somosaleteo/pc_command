@@ -2,7 +2,7 @@ import '../commands/order_ice_cream_command.dart';
 import '../entities.dart';
 import '../invokers/waiter_invoker.dart';
 import '../models/ice_cream_model.dart';
-import '../receivers/ice_cream_receiver.dart';
+import '../receivers/ice_cream_shop_receiver.dart';
 
 void main() {
   final IceCreamShopReceiver shopReceiver = IceCreamShopReceiver();

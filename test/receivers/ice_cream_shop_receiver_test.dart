@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pc_command/models/ice_cream_model.dart';
-import 'package:pc_command/receivers/ice_cream_receiver.dart';
+import 'package:pc_command/receivers/ice_cream_shop_receiver.dart';
 
 void main() {
   test('IceCreamShopReceiver should handle orders correctly', () {
