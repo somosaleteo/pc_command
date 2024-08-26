@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'clients/client_page.dart';
+import 'clients/client_action_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,8 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ClientPage(),
-      // home: const ClientActionPage(),
+      home: const ClientActionPage(),
     );
   }
 }
