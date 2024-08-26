@@ -9,6 +9,7 @@ void main() {
 
     receiver.orderIceCream(vanillaIceCream);
     expect(receiver.orders.length, 1);
+    expect(receiver.showOrders(), receiver.orders);
     expect(receiver.orders.first, vanillaIceCream);
 
     receiver.cancelIceCreamOrder(vanillaIceCream);
